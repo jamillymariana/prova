@@ -15,7 +15,17 @@
          Van Gogh decidiu pela internação no mencionado asilo.</p><br>
          <img src="main-qimg-067bd759e01f2e558de3cef7c2cacdf3-lq.jpeg" alt=""><br>
      <button id="botao" onclick="mudarTexto()">Clique aqui!</button>
-    <script src="script.js"></script>
+    <script src="script.js">
+        function mudarTexto() {
+    document.getElementById("demo").innerHTML = "Texto alterado!";
+}
+
+function botao() {
+    alert('alerta');
+}
+
+document, getElementById('botao').addEventlistener('click', botao);
+    </script>
 </body>
 <style>
 
@@ -39,11 +49,4 @@ img{
 }
 
 </style>
-<script>
-    alert('alerta')
-
-    function mudarTexto() {
-    document.getElementById("demo").innerHTML = "Texto alterado!";
-}
-</script>
 </html>
